@@ -1,0 +1,137 @@
+/* shared styles */
+*{
+        margin: 0;
+}
+body{
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+        font-family: 'Mulish', sans-serif;
+        margin: 52px 135px;
+}
+:root{
+        --primary-color:#64bd49;
+}
+
+/* nav section styles */
+.logo{
+        width: 48px;
+}
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.nav-title{
+        font-size: 36px;
+        font-style: 800;
+        color: #131318;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+}
+.nav-title span,.nav-home{
+        color: var(--primary-color);
+}
+nav ul{
+        display: flex;
+        list-style: none;
+        gap: 44px;
+}
+nav a{
+        text-decoration: none;
+        color: #424247;
+        font-size: 18px;
+        font-weight: 400;
+}
+
+/* banner section styles */
+.banner-section{
+        /* height:350px; */
+        background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        margin-top: 50px;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+}
+.banner-title{
+        color: #FFF;
+        font-size: 64px;
+        font-weight: 800;
+}
+.banner-description{
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 24px 0;
+        text-align: center;
+}
+
+.banner-inputs input{
+        height: 52px;
+        padding-left: 20px;
+        outline: none;
+        border: 0;
+        border-radius: 8px;
+        margin-right: 24px;
+}
+
+::placeholder{
+        color: rgba(19, 19, 24, 0.50);
+        opacity: 1;
+}
+
+.find-btn{
+        background-color: var(--primary-color);
+        color: #FFF;
+        border: 0;
+        height: 52px;
+        border-radius: 8px;
+        padding: 0 80px 0 20px;
+}
+
+@media screen and (max-width:576px) {
+        nav{
+                flex-direction: column;
+        }
+        nav ul{
+                gap: 10px;
+                margin: 10px 30px 0 0;
+        }
+        body{
+                margin:52px 30px;
+        }
+        .banner-section{
+                margin-top: 20px;
+                padding: 50px 10px;
+        }
+        .banner-title{
+                font-size: 22px;
+                font-weight: 700;
+        }
+        .banner-description{
+                font-size: 14px;
+                margin: 20px 0;
+                font-weight: 400;
+        }
+        .banner-inputs{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-left: 20px;
+                
+        }
+        .find-btn{
+                width: 60vw;
+                padding: 0 ;
+        }
+        .banner-inputs input{
+                width: 55vw;
+        }
+
+
+}
