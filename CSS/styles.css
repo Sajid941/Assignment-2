@@ -10,6 +10,16 @@ body{
 :root{
         --primary-color:#64bd49;
 }
+.primary-btn{
+        background-color: var(--primary-color);
+        border: none;
+        width: 160px;
+        color: #FFF;
+        border-radius: 8px;
+        padding: 20px;
+        font-size: 15px;
+        font-weight: 700;
+}
 
 /* nav section styles */
 .logo{
@@ -94,10 +104,40 @@ nav a{
         padding: 0 80px 0 20px;
 }
 
+/* popular tour section styles */
+.popular-tour-section{
+        display: flex;
+        margin-top: 100px;
+        gap: 100px;
+}
+.popular-tour-container{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+}
+.popular-tour-title{
+        color: #131318;
+        font-size: 48px;
+        font-weight: 800;
+}
+.popular-tour-description{
+        color: rgba(19, 19, 24, 0.70);
+}
+.popular-tour-list{
+        color: rgba(19, 19, 24, 0.70);
+
+}
+.popular-tour-section img{
+        height:450px;
+}
+
 @media screen and (max-width:576px) {
+        body{
+                margin:52px 30px;
+        }
+        /* nav section */
         nav{
                 flex-direction: column;
-                justify-content: center;
         }
         nav ul{
                 gap: 10px;
@@ -106,9 +146,7 @@ nav a{
         .nav-title{
                 font-size: 22px;
         }
-        body{
-                margin:52px 30px;
-        }
+        /* banner section */
         .banner-section{
                 margin-top: 20px;
                 padding: 50px 10px;
@@ -135,6 +173,25 @@ nav a{
         }
         .banner-inputs input{
                 width: 55vw;
+        }
+
+        /* tour section */
+        .popular-tour-section{
+                flex-direction: column;
+                gap: 20px;
+        }
+        .popular-tour-section img{
+                height: auto;
+
+        }
+
+        .popular-tour-title{
+                font-size: 20px;
+                margin-bottom: 0;
+
+        }
+        .popular-tour-description.popular-tour-list{
+                font-size: 14px;
         }
 
 
