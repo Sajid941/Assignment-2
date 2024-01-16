@@ -130,6 +130,129 @@ nav a{
 .popular-tour-section img{
         height:450px;
 }
+/* destination section styles */
+.destination-section{
+        margin-top: 100px;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+} 
+.destination-title{
+        color: #131318;
+        font-size: 40px;
+        font-weight: 800;
+}
+.destination-description{
+        color: rgba(19, 19, 24, 0.70);
+        margin: 25px 0;
+
+}
+.column h3{
+        position: relative;
+        bottom: 150px;
+        color: white;
+
+}
+.column{
+        display: flex;
+        gap: 20px;
+}
+/* why-choose-us section styles */
+.why-choose-us-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-content: center;
+        gap: 25px;
+
+
+}
+.why-choose-us-title{
+        text-align: center;
+        color: #131318;
+        font-size: 40px;
+        font-weight: 800;
+        margin-top: 100px;
+}
+.why-choose-us-description{
+        text-align: center;
+        color: rgba(19, 19, 24, 0.70);
+        margin: 25px 0;
+}
+.card{
+        background: rgba(251, 181, 99, 0.05);
+        border: 1px solid rgba(251, 181, 99, 0.20);
+        padding: 50px;
+        border-radius: 16px;
+
+}
+.card-title{
+        font-size: 24px;
+        font-weight: 800;
+        color: #131318;
+        margin: 24px 0 16px 0;
+}
+.card-description{
+        color: #5A5A5D;
+}
+.card-2{
+        border: 1px solid rgba(41, 206, 246, 0.20);
+        background: rgba(41, 206, 246, 0.05);
+}
+.card-3{
+        border: 1px solid rgba(233, 68, 68, 0.20);
+        background: rgba(233, 68, 68, 0.05);
+        margin: 25px auto;
+        width:510px;
+}
+/* newsletter section styles */
+.newsletter-container{
+        display: flex;
+        gap: 25px;
+        margin-top: 100px;
+        justify-content: center;
+}
+.newsletter{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid var(--primary-color);
+        padding: 50px;
+        border-radius: 16px;
+}
+.newsletter-title{
+        color: #131318;
+        font-size: 24px;
+        font-weight: 800;
+}
+.newsletter-description{
+        color: #5A5A5D;
+}
+.newsletter input{
+        border: 0;
+        outline: none;
+        padding: 20px;
+        background-color: rgba(19, 19, 24, 0.05);
+        border-radius: 8px;
+}
+.newsletter button{
+        width: 100%;
+}
+.newsletter hr{
+        border: 0.5px solid rgba(19, 19, 24, 0.05) ;
+}
+.saveing-btn{
+        font-size: 24px;
+        font-weight: 400;
+        width: fit-content;
+        position: relative;
+        left: 905px;
+        bottom: 170px;
+        transform: rotate(-25deg);
+}
+.saveing-text{
+        font-size: 32px;
+        font-weight: 800;
+}
 
 @media screen and (max-width:576px) {
         body{
@@ -194,5 +317,48 @@ nav a{
                 font-size: 14px;
         }
 
+        /*Destination section */
+        .column{
+                flex-direction: column;
+        }
+        .column img{
+                width: 100%;
+                height: 176px;
+        }
+        .column h3{
+                bottom: 100px;
+        }
+        .destination-title{
+                font-size: 20px;
+        }
+        .destination-description{
+                font-size: 14px;
+                margin: 10px 0;
+        }
+        /* why choose us section */
+        .why-choose-us-card{
+                grid-template-columns: 1fr;
+                /* grid-template-rows:1fr; */
+        }
+        .card-3{
+                width: fit-content;
+        }
+        .card{
+                font-size: 20px;
+                padding: 20px;
+        }
+        /* newsletter section */
+        .newsletter-container{
+                flex-direction: column;
+        }
+        .saveing-btn{
+                left: 135px;
+                bottom: 125px;
+                font-size: 14px;
+        }
+        .saveing-text{
+                font-size: 20px;
+
+        }
 
 }
