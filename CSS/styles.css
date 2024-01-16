@@ -404,7 +404,6 @@ footer hr{
         /* why choose us section */
         .why-choose-us-card{
                 grid-template-columns: 1fr;
-                /* grid-template-rows:1fr; */
         }
         .card-3{
                 width: fit-content;
