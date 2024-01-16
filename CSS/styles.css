@@ -5,7 +5,10 @@
 body{
         @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
         font-family: 'Mulish', sans-serif;
+}
+header,main{
         margin: 52px 135px;
+
 }
 :root{
         --primary-color:#64bd49;
@@ -97,6 +100,7 @@ nav a{
 
 .find-btn{
         background-color: var(--primary-color);
+        width: fit-content;
         color: #FFF;
         border: 0;
         height: 52px;
@@ -204,6 +208,32 @@ nav a{
         margin: 25px auto;
         width:510px;
 }
+/* perfect place section styles */
+.perfect-place{
+        display: flex;
+        gap: 30px;
+        margin-top: 100px;
+}
+.perfect-place-list{
+        width: 50%;
+}
+.place-title{
+        color: #131318;
+        font-size: 40px;
+        font-weight: 800;
+}
+.place-description{
+        color: #5A5A5D;
+        margin: 20px 0;
+}
+.perfect-place ul>li{
+        color: #131318;
+        margin-bottom: 20px;
+}
+.perfect-place iframe{
+        border-radius: 10px;
+}
+
 /* newsletter section styles */
 .newsletter-container{
         display: flex;
@@ -254,8 +284,44 @@ nav a{
         font-weight: 800;
 }
 
+/* footer section styles */
+footer{
+        height: 502px;
+        background-color: rgba(19, 19, 24, 0.05);
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+}
+.footer-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.footer-description{
+        color: #5A5A5D;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 20px 250px;
+}
+footer img{
+        width: 40px;
+        margin-right: 20px;
+}
+.x-logo{
+        width: 60px;
+        margin-right: 12px;
+}
+footer hr{
+        margin:50px 200px;
+        border: 0.5px solid rgba(19, 19, 24, 0.05) ;
+        
+}
+.rigths{
+        color:#5A5A5D ;
+}
+
 @media screen and (max-width:576px) {
-        body{
+        header,main{
                 margin:52px 30px;
         }
         /* nav section */
@@ -347,6 +413,21 @@ nav a{
                 font-size: 20px;
                 padding: 20px;
         }
+        /* perfect place */
+        .perfect-place{
+                flex-direction: column;
+                align-items: center;
+        }
+        .place-title{
+                font-size: 20px;
+        }
+        .perfect-place-list{
+                width: 100%;
+        }
+        .perfect-place iframe{
+                width: 90vw;
+
+        }
         /* newsletter section */
         .newsletter-container{
                 flex-direction: column;
@@ -359,6 +440,16 @@ nav a{
         .saveing-text{
                 font-size: 20px;
 
+        }
+        /* footer section */
+        footer{
+                height: 100%;
+        }
+        .footer-description{
+                margin: 20px 25px;
+        }
+        footer hr{
+                margin: 20px 30px;
         }
 
 }
